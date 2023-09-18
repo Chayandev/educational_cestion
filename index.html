@@ -141,8 +141,49 @@
                     <a href="#" class="btn btn-primary">Know More</a>
                 </div>
             </div>
+            <div class="check-for-own-e-waste">
+                 <!-- Your form content -->
+            <form class="input-section">
+                <div class="input-group">
+                    <label for="deviceType">Select Device Type:</label>
+                    <select id="deviceType" onchange="updateCompanyOptions()">
+                        <option value="smartphone">Smartphone</option>
+                        <option value="keyboard">Keyboard</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="company">Select Company:</label>
+                    <select id="company">
+                        <!-- Options will be populated dynamically using JavaScript -->
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="modelType">Select Model Type:</label>
+                    <select id="modelType">
+                        <!-- Options will be populated dynamically using JavaScript -->
+                    </select>
+
+
+                </div>
+
+                <div class="input-group">
+                    <label for="condition">Select Condition:</label>
+                    <select id="condition">
+                        <option value="damaged">Damaged</option>
+                        <option value="useless">Totally Useless</option>
+                    </select>
+                </div>
+            </form>
+            <button id="generate">SUBMIT</button>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
